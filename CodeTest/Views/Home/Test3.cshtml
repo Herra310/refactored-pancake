@@ -1,4 +1,11 @@
 ﻿@{
     ViewBag.Title = "Test 3";
 }
-<h2>@ViewBag.Title.</h2>
+
+<h2>Resultado de la API</h2>
+
+<p> { "margin": @ViewBag.Margin }</p>
+
+<form method="get" action="@Url.Action("GetMargin", "Margin")">
+    <button type="submit">Obtener Margen </button>
+</form>
